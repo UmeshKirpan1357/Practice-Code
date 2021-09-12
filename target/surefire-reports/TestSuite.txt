@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 233.341 sec <<< FAILURE!
+validateContactPageTitleTest(com.crm.qa.testcases.ContactPageTest)  Time elapsed: 0.377 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Cont3acts] but found [Contacts]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.crm.qa.testcases.ContactPageTest.validateContactPageTitleTest(ContactPageTest.java:43)
+
+tearDown(com.crm.qa.testcases.ContactPageTest)  Time elapsed: 0.381 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)" because "this.logger" is null
+	at com.crm.qa.testcases.ContactPageTest.tearDown(ContactPageTest.java:85)
+
+loginPageTitleTest(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [#1x`Free CRM customer relationship management software cloud] but found [#1 Free CRM customer relationship management software cloud]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.crm.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:36)
+
