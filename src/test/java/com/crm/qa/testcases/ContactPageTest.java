@@ -75,6 +75,8 @@ public class ContactPageTest extends TestBase {
 			System.out.println(Description);
 
 			contactPage.validateCreateNewContact(FirstName, MiddleName, LastName, Description);
+			
+			System.out.println("I am changed code");
 		}
 	}
 
